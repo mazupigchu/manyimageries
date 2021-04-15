@@ -1,0 +1,410 @@
+body {
+  /* 背景用半透明图片， */
+  background: transparent url('../images/filter2.png') no-repeat top scroll;
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.defaultbtn {
+  padding: 8px 20px;
+  background-color: #fff;
+  border: 1.5px solid #000;
+  color: #000;
+  border-radius: 23.5px;
+  font-size: 26px;
+  height: 47px;
+  line-height: 31px;
+  box-sizing: border-box;
+  display: block;
+  letter-spacing: -0.03em;
+}
+.defaultbtn.addbtn:active {
+  background: #000;
+  color: #fff;
+}
+.defaultbtn.addbtn:visited {
+  background: #fff;
+  color: #000;
+}
+.titfont {
+  font-family: 'Palatino';
+  font-style: italic;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.02em;
+}
+.art {
+  font-family: 'Palatino';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.03em;
+}
+#indexleftbtn a {
+  font-family: 'f1';
+}
+#indexleftbtn .shige {
+  font-family: 'f2';
+}
+#indexleftbtn ul a {
+  font-family: 'f2';
+}
+.btnbox #download {
+  display: none;
+}
+.btnbox .bottomrightbtn.resultbtn {
+  display: none;
+}
+.btnbox .bottomrightbtn.startbtn {
+  display: block;
+}
+.btnbox a:hover {
+  background: #4232ff;
+  color: #fff;
+}
+.btnbox .topleftbtn {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+.btnbox .twice.toprightbtn {
+  width: 260px;
+  text-align: right;
+}
+.btnbox .twice.toprightbtn a {
+  display: inline-block;
+  white-space: nowrap;
+}
+.btnbox .twice.toprightbtn .Poems {
+  margin-right: 20px;
+}
+.btnbox .twice.bottomrightbtn {
+  width: 500px;
+  text-align: right;
+}
+.btnbox .twice.bottomrightbtn #Pause {
+  margin-right: 0;
+}
+.btnbox .twice.bottomrightbtn #resume {
+  display: none;
+  margin-right: 0;
+}
+.btnbox .twice.bottomrightbtn a {
+  margin: 0 10px;
+}
+.btnbox .twice.bottomrightbtn a {
+  display: inline-block;
+  white-space: nowrap;
+}
+.btnbox .toprightbtn {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+.btnbox .toprightbtn a {
+  white-space: nowrap;
+}
+.btnbox .bottomleftbtn {
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+}
+.btnbox .bottomleftbtn .mainbtn.black {
+  background-color: #000;
+  color: #fff;
+}
+.btnbox .bottomleftbtn ul {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  display: none;
+}
+.btnbox .bottomleftbtn ul li {
+  margin: 20px 0;
+}
+.btnbox .bottomleftbtn ul li a {
+  padding: 0 20px;
+  background-color: #fff;
+  border: 1.5px solid #000;
+  color: #000;
+  border-radius: 20px;
+  font-size: 24px;
+  line-height: 40px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.btnbox .bottomleftbtn ul li a:hover {
+  background: #4232ff;
+  color: #fff;
+}
+.btnbox .bottomrightbtn {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+.btnbox .bottomrightbtn .ugly {
+  opacity: 0.3;
+}
+.btnbox .bottomrightbtn .ugly:hover {
+  background: #fff;
+  color: #000;
+}
+/* 中心内容 */
+#centerbox:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent url('../images/filter2.png') no-repeat top scroll;
+  background-size: cover;
+  z-index: 9999;
+}
+#centerbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* 中心内容显示图片区域 */
+}
+#centerbox .centertxt {
+  color: #000;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+#centerbox .centertxt em {
+  color: #4232ff;
+}
+/* home */
+#home #choosetxt.ugly {
+  opacity: 0.1;
+}
+#home #choosetxt {
+  box-sizing: border-box;
+  display: none;
+  overflow: hidden;
+  border: 1px solid #000;
+  border-radius: 24px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#home #choosetxt span:nth-child(1) {
+  position: relative;
+  z-index: 99999;
+  padding-left: 20px;
+}
+#home #choosetxt span:last-child {
+  padding-right: 20px;
+}
+#home #choosetxt span {
+  height: 100%;
+  /* 调整词间距 */
+  padding: 0 5px;
+  display: inline-block;
+  line-height: 48px;
+  color: #333;
+}
+#home #choosetxt .sure {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+#home #choosetxt .sure.maintxt {
+  background: #4232ff;
+  color: #fff;
+  animation: surecolor 5s forwards;
+}
+#home #choosetxt:hover {
+  background: #fff;
+  color: #333;
+}
+#home .maindownlist ul {
+  position: fixed;
+  right: 182px;
+  top: 97px;
+  display: none;
+  width: 318px;
+}
+#home .maindownlist ul li {
+  margin: 20px 0;
+  overflow: hidden;
+}
+#home .maindownlist ul li a {
+  float: right;
+  padding: 0 20px;
+  background-color: #fff;
+  border: 1.5px solid #000;
+  color: #000;
+  border-radius: 20px;
+  font-size: 24px;
+  line-height: 40px;
+  display: inline-block;
+  white-space: nowrap;
+  font-family: 'f2';
+}
+#home .maindownlist ul li a:hover {
+  background: #4232ff;
+  color: #fff;
+}
+/* 拼图 */
+#dvPuzzle {
+  width: 1000px;
+  height: 750px;
+  border: solid 5px blue;
+  padding: 0px;
+}
+.PicCell img {
+  width: 1000px;
+  height: 750px;
+}
+.PicCell {
+  width: 250px;
+  height: 250px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.mainbox {
+  opacity: 0.8;
+}
+/* about弹框文字 */
+#fixedbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff url('../images/filter.png') no-repeat top scroll;
+  background-size: cover;
+  z-index: 999999;
+  display: none;
+}
+#fixedbox .topleftbtn {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+#fixedbox .toprightbtn {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  width: 240px;
+}
+#fixedbox .toprightbtn ul {
+  position: absolute;
+  left: -30px;
+  top: 50px;
+  display: none;
+}
+#fixedbox .toprightbtn ul li {
+  margin: 20px 0;
+}
+#fixedbox .toprightbtn ul li a {
+  padding: 0 20px;
+  background-color: #fff;
+  border: 1.5px solid #000;
+  color: #000;
+  border-radius: 20px;
+  font-size: 24px;
+  line-height: 40px;
+  display: inline-block;
+  white-space: nowrap;
+}
+#fixedbox .toprightbtn ul li a:hover {
+  background: #4232ff;
+  color: #fff;
+}
+#fixedbox .toprightbtn .downlist {
+  display: inline-block;
+  width: 110px;
+}
+#fixedbox .toprightbtn a {
+  white-space: nowrap;
+}
+#fixedbox #closeaboutbtn {
+  width: 110px;
+  float: right;
+}
+#fixedbox #closeaboutbtn:hover {
+  background: #4232ff;
+  color: #fff;
+}
+#fixedbox .content {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 780px;
+  padding-top: 100px;
+}
+#fixedbox .content p {
+  text-align: left;
+  display: block;
+  margin: auto;
+  font-size: 22px;
+  color: #333;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+@-webkit-keyframes surecolor {
+  /*Safari and Chrome*/
+  0% {
+    background: #4232ff;
+    color: #fff;
+  }
+  10% {
+    background: #fff;
+    color: #000;
+  }
+  20% {
+    background: #4232ff;
+    color: #fff;
+  }
+  30% {
+    background: #fff;
+    color: #000;
+  }
+  40% {
+    background: #4232ff;
+    color: #fff;
+  }
+  50% {
+    background: #fff;
+    color: #000;
+  }
+  60% {
+    background: #4232ff;
+    color: #fff;
+  }
+  70% {
+    background: #fff;
+    color: #000;
+  }
+  80% {
+    background: #4232ff;
+    color: #fff;
+  }
+  90% {
+    background: #fff;
+    color: #000;
+  }
+  100% {
+    background: #4232ff;
+    color: #fff;
+  }
+}
